@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
         agent any
         options {
-          skipDefaultCheckout
+          skipDefaultCheckout()
         }
         steps {
           echo 'Hello, check my workspace and I did not checked-out the code from GIT'
