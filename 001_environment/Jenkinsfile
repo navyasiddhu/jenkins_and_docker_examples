@@ -16,5 +16,19 @@ pipeline {
           echo "name3 is ${internal_name}"
         }
     }
+    stage('Test') {
+        environment {
+          test_name = 'user3'
+          name2 = 'Namechanged'
+        }
+        agent any
+        steps {
+          echo "name1 is ${name1}"
+          echo "name2 is ${name2}"
+          echo "name3 is ${test_name}"
+        }
+    }
+    
   }
 }
+
