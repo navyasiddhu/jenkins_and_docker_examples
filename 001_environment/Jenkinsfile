@@ -1,0 +1,20 @@
+pipeline {
+  agent none
+  environment {
+    name1 = "user1"
+    name2 = "user2"
+  }
+  stages {
+    stage('Build') {
+        environment {
+          internal_name = 'user3'
+        }
+        agent any
+        steps {
+          echo "name1 is ${name1}"
+          echo "name2 is ${name2}"
+          echo "name3 is ${name3}"
+        }
+    }
+  }
+}
