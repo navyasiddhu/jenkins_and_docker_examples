@@ -1,6 +1,5 @@
 pipeline {
   agent none
-
   states {
     stage('Build') {
         agent any
