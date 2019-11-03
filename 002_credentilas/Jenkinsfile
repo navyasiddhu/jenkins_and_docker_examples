@@ -8,8 +8,8 @@ pipeline {
     stage('Build') {
         agent any
         steps {
-        echo "some_username"
-        echo "some_secrettext"
+        echo "some_username is ${some_username}"
+        echo "some_secrettext is ${some_secrettext}"
         }
     }
   }  
