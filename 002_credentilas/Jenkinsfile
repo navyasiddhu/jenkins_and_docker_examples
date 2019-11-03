@@ -2,7 +2,7 @@ pipeline {
   agent none
   environment {
     some_username = credentials("user_name1")
-    some_secrettext = credentils("some_secrettext")    
+    some_secrettext = credentials("some_secrettext")    
   }
   stages {
     stage('Build') {
