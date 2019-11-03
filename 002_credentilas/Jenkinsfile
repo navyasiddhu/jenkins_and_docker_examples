@@ -1,4 +1,4 @@
-pipeleine {
+pipeline {
   agent none
   environment {
     some_username = credentials("user_name1")
